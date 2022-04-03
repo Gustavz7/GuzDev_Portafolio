@@ -1,0 +1,8 @@
+.component-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.component{
+    margin: 20px 0;
+}

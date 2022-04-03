@@ -1,0 +1,31 @@
+<div class="skills-container">
+  <div class="text-section">
+    <div class="text-header">
+      <p class="title-2">Skills</p>
+      <p class="title-1">See my Personal and Programming skills</p>
+    </div>
+  </div>
+  <div class="charts-section">
+    <ngx-charts-bar-horizontal
+      [view]="view"
+      [scheme]="colorScheme"
+      [gradient]="true"
+      [animations]="true"
+      [gradient]="true"
+      [showDataLabel]="true"
+      [results]="skills_data"
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis"
+      [legend]="showLegend"
+      [legendTitle]="legendTitle"
+      [showXAxisLabel]="showXAxisLabel"
+      [showYAxisLabel]="showYAxisLabel"
+      [xAxisLabel]="xAxisLabel"
+      [yAxisLabel]="yAxisLabel"
+      [xScaleMax]="maxScale"
+      style="fill: white;"
+      
+    >
+    </ngx-charts-bar-horizontal>
+  </div>
+</div>

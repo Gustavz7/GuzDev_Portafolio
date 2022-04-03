@@ -1,0 +1,59 @@
+.card {
+  color: white;
+  max-width: 200px;
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 10px;
+}
+.card-component-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-component-header p {
+  font-size: 20px;
+  margin: auto 0;
+  font-weight: bold;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+mat-card-content {
+  margin: 0;
+  overflow-y: hidden;
+
+}
+mat-card-actions{
+bottom: 0;
+}
+/*
+  * button styles
+  */
+.btn-more {
+  border-bottom: 2px solid rgb(92, 77, 221);
+}
+.btn-more:hover {
+  border-color: rgb(255, 255, 255);
+}
+.card-btn {
+  border: 1px solid;
+  border-radius: 20px;
+}
+.card-btn a{
+  text-decoration: none;
+  color: white;
+}
+.card-btn:hover {
+  border-color: mediumaquamarine;
+}
+.visit-btn {
+  border-color: green;
+}
+.viewCode-btn {
+  border-color: rgba(121, 44, 141, 1);
+}

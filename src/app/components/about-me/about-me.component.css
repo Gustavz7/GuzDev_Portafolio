@@ -1,0 +1,38 @@
+.aboutMe-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2% 5%;
+  border-radius: 15px;
+}
+
+.img-section {
+  width: 40%;
+  margin: 0 2%;
+}
+.img-section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.text-section {
+  margin: 0 2%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.title-1{
+    color: rgb(96, 80, 230);
+    letter-spacing: 6px;
+}
+.title-2{
+    font-size: 25px;
+}
+.description{
+    font-size: 15px;
+}
+
+.contact-btn{
+    border: 2px solid white;
+}

@@ -1,0 +1,28 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 5%;
+  border-radius: 15px;
+}
+
+.text-section {
+  margin: 0 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.charts-section {
+  display: flex;
+  justify-content: center;
+}
+.title-1 {
+  color: rgb(96, 80, 230);
+  letter-spacing: 6px;
+}
+.title-2 {
+  font-size: 25px;
+}
+.description {
+  font-size: 15px;
+}
