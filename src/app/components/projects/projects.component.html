@@ -2,28 +2,31 @@
   <p>Personal Projects</p>
   <button mat-button class="btn-more">Explore More</button>
 </div>
-<div class="cards-container">
-  <mat-card class="card" *ngFor="let item of projects_data">
-    <img mat-card-image src="{{ item.img_url }}" alt="Photo of a Shiba Inu" />
-
-    <mat-card-header>
-      <mat-card-title> {{ item.name }} </mat-card-title>
-      <p>{{ item.date }}</p>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        {{ item.description }}
-      </p>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-button class="card-btn visit-btn">
-        <fa-icon [icon]="faArrowRight"></fa-icon>
-        <a href="{{ item.link_visit }}">Visit</a>
-      </button>
-      <button mat-button class="card-btn viewCode-btn">
-        <fa-icon [icon]="faGithub"></fa-icon>
-        <a href="{{ item.link_code }}"> View Code</a>
-      </button>
-    </mat-card-actions>
+<div class="card-container">
+  <mat-card *ngFor="let item of projects_data">
+    <div class="card-img">
+      <img src="{{ item.img_url }}" alt="Project" />
+    </div>
+    <div class="card-text">
+      <mat-card-header>
+        <mat-card-title> {{ item.name }} </mat-card-title>
+        <p>{{ item.date }}</p>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{ item.description }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="card-btn visit-btn">
+          <fa-icon [icon]="faArrowRight"></fa-icon>
+          <a href="{{ item.link_visit }}">Visit</a>
+        </button>
+        <button mat-button class="card-btn viewCode-btn">
+          <fa-icon [icon]="faGithub"></fa-icon>
+          <a href="{{ item.link_code }}"> View Code</a>
+        </button>
+      </mat-card-actions>
+    </div>
   </mat-card>
 </div>

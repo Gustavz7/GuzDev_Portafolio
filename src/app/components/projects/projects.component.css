@@ -1,11 +1,34 @@
-.card {
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+mat-card {
   color: white;
-  max-width: 200px;
-  height: auto;
+  height: 400px;
+  max-width: 220px;
   border-radius: 15px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(0, 0, 0, 0.3);
   margin: 10px;
+  padding: 0;
+}
+mat-card img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  resize: both;
+  
+}
+/* ! pendiente: ajustar la imagen, de las cartas de los proyectos, indagar sobre el tamaño adecuado*/
+.card-img{
+  height: 200px;
+  width: 100%;
+}
+.card-text{
+  padding: 10px;
 }
 .card-component-header {
   display: flex;
@@ -18,18 +41,13 @@
   font-weight: bold;
 }
 
-.cards-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 mat-card-content {
   margin: 0;
   overflow-y: hidden;
-
 }
-mat-card-actions{
-bottom: 0;
+mat-card-actions {
+  bottom: 0;
+  margin-bottom: 0;
 }
 /*
   * button styles
@@ -44,7 +62,7 @@ bottom: 0;
   border: 1px solid;
   border-radius: 20px;
 }
-.card-btn a{
+.card-btn a {
   text-decoration: none;
   color: white;
 }

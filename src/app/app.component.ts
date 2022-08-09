@@ -25,6 +25,7 @@ export class AppComponent {
   faGoogle = faGoogle;
 
   constructor( private scroller: ViewportScroller) {}
+  //funciones de home que redirigen a distintos id de secciones de la pagina
   goToWelcome() {
     this.scroller.scrollToAnchor('welcome');
   }

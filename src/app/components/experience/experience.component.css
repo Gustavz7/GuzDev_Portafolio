@@ -12,6 +12,46 @@
   flex-direction: column;
   text-align: left;
 }
+.cards-section {
+  display: flex;
+  flex-direction: row;
+}
+mat-card {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-body {
+  width: 100%;
+  font-size: 13px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+p{
+}
+.card-img {
+  width: 150px;
+  margin: auto;
+}
+.company-title {
+}
+.job-title {
+    font-weight: bold;
+  font-size: 25px;
+}
+.date-title {
+}
+.total-time-title {
+    font-weight: bold;
+    font-size: 15px;
+}
 .title-1 {
   color: rgb(96, 80, 230);
   letter-spacing: 6px;
