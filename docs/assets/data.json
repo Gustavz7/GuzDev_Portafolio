@@ -7,7 +7,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
       "link_code": "https://www.github.com",
       "link_visit": "https://www.google.com",
-      "img_url": "./../../../assets/crud-img.png",
+      "img_url": "assets/crud-img.png",
       "teconologies": [
         {
           "front": "angular",
@@ -52,7 +52,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
       "link_code": "https://www.github.com",
       "link_visit": "https://www.google.com",
-      "img_url": "./../../../assets/home.jpg",
+      "img_url": "assets/home.jpg",
       "teconologies": [
         {
           "front": "Angular",
