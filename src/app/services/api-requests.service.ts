@@ -9,7 +9,7 @@ export class ApiRequestsService {
 
   constructor(private http:HttpClient) { }
 
-  baseUrl:string = "GuzDev_Portafolio/assets";
+  baseUrl:string = "/assets";
 
   getProjectData():Observable<any>{
     return this.http.get(`${this.baseUrl}/data.json`)
