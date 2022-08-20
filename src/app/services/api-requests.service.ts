@@ -1,3 +1,4 @@
+import { UserData } from './../models/user-data/user-data';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -9,14 +10,10 @@ export class ApiRequestsService {
 
   constructor(private http:HttpClient) { }
 
-  baseUrl:string = "assets/";
+  //prod -> assets/data
+  baseUrl:string = "/assets/data"; 
 
-  getProjectData():Observable<any>{
-    return this.http.get(`${this.baseUrl}/data.json`)
-  }
-
-  getSkillsData():Observable<any>{
-    return this.http.get(`${this.baseUrl}/skills_data.json`)
-
+  getUserData():Observable<UserData>{
+    return this.http.get<UserData>(`${this.baseUrl}/data.json`)
   }
 }

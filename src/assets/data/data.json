@@ -1,4 +1,15 @@
 {
+  "person": [
+    {
+      "first_name": "Gustavo",
+      "last_name": "Millanao",
+      "date": "27-01-2022",
+      "description": "Actualmente cursando el ultimo año de la carrera de informática, cuento con conocimientos en variadas áreas de la misma, desde arquitectura, pasando por servidores hasta el diseño web, me considero una persona proactiva, amigable y responsable, me gusta aprender nuevas tecnologías en el área del desarrollo de software en general.",
+      "linkedin_url": "https://www.github.com",
+      "img_main_src": "assets/crud-img.png",
+      "img_secondary_src": null
+    }
+  ],
   "projects": [
     {
       "id": 1,
@@ -22,7 +33,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
       "link_code": "https://www.github.com",
       "link_visit": "https://www.google.com",
-      "img_url": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "img_url": "assets/crud-img-4.png",
       "teconologies": [
         {
           "front": "Vue.js",
@@ -37,7 +48,7 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
       "link_code": "https://www.github.com",
       "link_visit": "https://www.google.com",
-      "img_url": "https://material.angular.io/assets/img/examples/shiba2.jpg",
+      "img_url": "assets/crud-img-2.png",
       "teconologies": [
         {
           "front": "Angular + NgxCharts",
@@ -52,13 +63,35 @@
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
       "link_code": "https://www.github.com",
       "link_visit": "https://www.google.com",
-      "img_url": "assets/home.jpg",
+      "img_url": "assets/crud-img-3.png",
       "teconologies": [
         {
           "front": "Angular",
           "back": "Firebase"
         }
       ]
+    }
+  ],
+  "job_experience": [
+    {
+      "job_name": "Centers Junior 2",
+      "job_description": "",
+      "job_location": "Temuco, Araucania",
+      "start_date": "2022-03-07T23:00:00.000+00:00",
+      "end_date": "",
+      "company_title": "NTTDATA CHILE CENTERS",
+      "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
+      "company_url": "es.nttdata.com"
+    },
+    {
+      "job_name": "Practica Profesional",
+      "job_description": "",
+      "job_location": "Temuco, Araucania",
+      "start_date": "2021-12-07T23:00:00.000+00:00",
+      "end_date": "2022-03-07T23:00:00.000+00:00",
+      "company_title": "NTTDATA CHILE CENTERS",
+      "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
+      "company_url": "es.nttdata.com"
     }
   ]
 }

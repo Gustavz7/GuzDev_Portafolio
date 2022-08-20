@@ -4,8 +4,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  //ruta por defecto para el Home
   { path: '', component: HomeComponent },
-  { path: '**', component: PageNotFoundComponent } // last in the list forever
+
+  //Ultimo en la lista siempre, Esta ruta indica el manejo para rutas no establecidas
+  { path: '**', component: PageNotFoundComponent }
 
 ];
 

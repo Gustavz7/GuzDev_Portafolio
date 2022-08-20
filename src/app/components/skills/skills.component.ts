@@ -1,4 +1,4 @@
-import { skills_data } from './../../../assets/Skills_data';
+import { skills_data } from '../../../assets/data/Skills_data';
 import { ApiRequestsService } from 'src/app/services/api-requests.service';
 import { Component, OnInit } from '@angular/core';
 import { Color, ScaleType } from '@swimlane/ngx-charts';

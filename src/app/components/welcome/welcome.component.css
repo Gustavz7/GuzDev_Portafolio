@@ -1,10 +1,9 @@
 .welcome-section {
-  width: 100%;
+  width: auto;
   height: 760px;
-  
+  margin: 0;
   background: linear-gradient(to left, rgba(255, 0, 0, 0), black);
   /*  ! pendiente combinar degradado + imagen*/
-
   display: flex;
   flex-direction: row;
 }

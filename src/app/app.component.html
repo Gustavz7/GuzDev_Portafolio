@@ -11,10 +11,10 @@
     <div class="toolbar-links">
       <!-- Here the links and elements routes of the page -->
 
-      <button mat-button class="toolbar-item"  (click)="goToWelcome()">
+      <button mat-button class="toolbar-item" (click)="goToWelcome()">
         <a> Home </a>
       </button>
-      <button mat-button class="toolbar-item"  (click)="goToExperience()">
+      <button mat-button class="toolbar-item" (click)="goToExperience()">
         <a> Experience </a>
       </button>
       <button mat-button class="toolbar-item" (click)="goToSkills()">
@@ -34,95 +34,68 @@
       <button mat-button class="toolbar-item toolbar-search">
         <mat-icon> search </mat-icon>
       </button>
-      <button mat-button class="toolbar-item toolbar-principal-btn">
-        <mat-icon> stars </mat-icon>
-        <span>Contact</span>
-      </button>
+      <a mat-button target="_blank" href="https://www.linkedin.com/in/gustavo-alexis-millanao-rain-483774207/" class="toolbar-item toolbar-principal-btn">
+        <mat-icon>stars</mat-icon> Contact
+      </a>
     </div>
   </mat-toolbar>
 
   <div class="app-content">
     <router-outlet></router-outlet>
   </div>
-</div>
-<div class="app-footer">
-  <div class="footer-elements-group">
-    <div class="footer-element element-principal">
-      <div class="element-header">
-        <mat-icon class="element-header-icon"> stars</mat-icon>
-        <span class="element-header-title"> GuzDev </span>
+
+  <div class="footer">
+    <div class="footer-elements-group">
+      <div class="footer-element element-principal">
+        <div class="element-header-main">
+          <span class="element-header-title">GuzDev </span>
+        </div>
+        <div class="element-text">
+          <p>
+            Esta aplicacion de portafolio fue construida con Angular 13 y es ofrecida a usted gracias a GitHubPages
+          </p>
+        </div>
+        <div class="icons-list">
+          <a href="http://www.facebook.com" target="_blank">
+            <fa-icon [icon]="faFacebook" size="3x"></fa-icon>
+          </a>
+          <a href="http://www.instagram.com" target="_blank">
+            <fa-icon [icon]="faInstagram" size="3x"></fa-icon>
+          </a>
+          <a href="http://www.discord.com" target="_blank">
+            <fa-icon [icon]="faDiscord" size="3x"></fa-icon>
+          </a>
+          <a href="http://www.google.com" target="_blank">
+            <fa-icon [icon]="faGoogle" size="3x"></fa-icon>
+          </a>
+        </div>
       </div>
-      <div class="element-text">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-          alias blabla.
-        </p>
+      <div class="footer-element">
+        <div class="element-header">
+          <p>Contact</p>
+        </div>
+        <div class="element-links">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/gustavo-alexis-millanao-rain-483774207/"
+                target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Gustavz7" target="_blank">GitHub</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="icons-list">
-        <a href="http://www.facebook.com" target="_blank">
-          <fa-icon [icon]="faFacebook" size="3x"></fa-icon>
-        </a>
-        <a href="http://www.instagram.com" target="_blank">
-          <fa-icon [icon]="faInstagram" size="3x"></fa-icon>
-        </a>
-        <a href="http://www.discord.com" target="_blank">
-          <fa-icon [icon]="faDiscord" size="3x"></fa-icon>
-        </a>
-        <a href="http://www.google.com" target="_blank">
-          <fa-icon [icon]="faGoogle" size="3x"></fa-icon>
-        </a>
-      </div>
-    </div>
-    <div class="footer-element">
-      <div class="element-header">
-        <p>Contact</p>
-      </div>
-      <div class="element-links">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/gustavo-alexis-millanao-rain-483774207/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/Gustavz7" target="_blank">GitHub</a></li>
-          <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
-          <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-element">
-      <div class="element-header">
-        <p>Topic</p>
-      </div>
-      <div class="element-links">
-        <ul>
-          <li><a href="">Experience</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">About Me</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-element">
-      <div class="element-header">
-        <p>Topic</p>
-      </div>
-      <div class="element-links">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-element">
-      <div class="element-header">
-        <p>Topic</p>
-      </div>
-      <div class="element-links">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-          <li><a href="">Home</a></li>
-        </ul>
+      <div class="footer-element">
+        <div class="element-header">
+          <p>Topic</p>
+        </div>
+        <div class="element-links">
+          <ul>
+            <li><a (click)="goToExperience()">Experience</a></li>
+            <li><a (click)="goToSkills()">Skills</a></li>
+            <li><a (click)="goToProjects()">Projects</a></li>
+            <li><a (click)="goToAboutMe()">About Me</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

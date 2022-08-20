@@ -9,36 +9,19 @@
   </div>
 
   <div class="cards-section">
-    <mat-card class="card">
+
+    <div class="card" *ngFor="let item of exp_data">
       <div class="card-body">
-
-        <p class="company-title"> NTTDATA CHILE CENTERS</p>
-        <P class="job-title"> Centers Junior</P>
-        <p class="date-title"> Feb 2022 - Actualidad </p>
-        <p class="total-time-title"> 1 año</p>
-        <img
-        class="card-img"
-        src="https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg"
-      />
+        <P class="job-title"> {{item.job_name}}</P>
+        <p class="date-title"> {{item.start_date | date:'mediumDate'}}</p>
+        <span class="date-title"> - </span>
+        <span class="date-title" *ngIf="isActualJob(item);else endDate"> Today </span>
+        <ng-template #endDate> <span class="date-title">{{item.end_date | date:'mediumDate'}}</span></ng-template>
+        <p class="total-time-title"> {{calcDays(item)}} </p>
+        <p class="company-title"> {{item.company_title}}</p>
+        <img class="card-img" src="{{item.company_img}}" />
       </div>
+    </div>
 
-    </mat-card>
-    <mat-card class="card">
-        <div class="card-body">
-  
-          <p class="company-title"> NTTDATA CHILE CENTERS</p>
-          <P class="job-title"> Practica Pofesional</P>
-          <p class="date-title"> Dic 2021 - Actualidad </p>
-          <p class="total-time-title"> 3 meses</p>
-          <img
-          class="card-img"
-          src="https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg"
-        />
-        </div>
-  
-      </mat-card>
-<!-- TODO queda pendiente agregar la estructura de datos en un archivo separado para hacer mas dinamica la agregacion de nuevos registros-->
-  
   </div>
- 
 </div>

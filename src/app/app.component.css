@@ -7,9 +7,10 @@
 }
 .app {
   height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
-  
+  flex-direction: column;
 }
 
 /*
@@ -81,15 +82,14 @@
 * App content
 */
 .app-content {
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 /*
 * Footer styles
 */
 
-.app-footer {
+.footer {
   width: 100%;
   bottom: 0;
   padding: 4% 0;
@@ -116,23 +116,24 @@
 }
 .element-header {
   height: auto;
+  align-items: center;
+}
+.element-header-main{
+
 }
 .element-header p {
     color: rgb(96, 80, 230);
     font-size: 15px;
     font-weight: bold;
-    height: auto;
-  }
+    margin: auto;
+}
 .element-header-icon {
   font-size: 40px;
-  height: auto;
-  width: auto;
 }
 .element-header-title {
   font-size: 25px;
   color: rgb(96, 80, 230);
   font-weight: bold;
-  height: auto;
 }
 
 .icons-list {
