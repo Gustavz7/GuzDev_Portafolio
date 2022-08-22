@@ -11,7 +11,7 @@ export class ApiRequestsService {
   constructor(private http:HttpClient) { }
 
   //prod -> assets/data
-  baseUrl:string = "/assets/data"; 
+  baseUrl:string = "assets/data"; 
 
   getUserData():Observable<UserData>{
     return this.http.get<UserData>(`${this.baseUrl}/data.json`)
