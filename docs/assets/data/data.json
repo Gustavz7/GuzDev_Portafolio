@@ -1,0 +1,82 @@
+{
+  "person": [
+    {
+      "first_name": "Gustavo",
+      "last_name": "Millanao",
+      "date": "27-01-2022",
+      "description": "Actualmente cursando el ultimo año de la carrera de informática, cuento con conocimientos en variadas áreas de la misma, desde arquitectura, pasando por servidores hasta el diseño web, me considero una persona proactiva, amigable y responsable, me gusta aprender nuevas tecnologías en el área del desarrollo de software en general.",
+      "linkedin_url": "https://www.github.com",
+      "img_main_src": "assets/crud-img.png",
+      "img_secondary_src": null
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Crud-Img",
+      "date": "27-01-2022",
+      "description": "Local repository of images, cumplies with the basics uses of the information CRUD (Create, Read, Update, Delete)",
+      "code_source": "https://github.com/Gustavz7/crud-img",
+      "demo_source": "",
+      "img_url": "assets/crud-img.png",
+      "teconologies": [
+        {
+          "front": "angular",
+          "back": "SpringBoot"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Gestor de fondos",
+      "date": "20-07-2021",
+      "description": "A simple app of spent registration with description and title, created with Laravel 8 & Vue 2",
+      "code_source": "https://github.com/Gustavz7/Proyecto_web_gestor_fondos",
+      "demo_source": "",
+      "img_url": "assets/2.png",
+      "teconologies": [
+        {
+          "front": "Vue.js",
+          "back": "Laravel"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Money prices Graphic",
+      "date": "20-02-2022",
+      "description": "This app showS the price of differents Currencies like Dolar, Clp, Euro in an beautiful chart of the Angular Charts Library NGX",
+      "code_source": "https://github.com/Gustavz7/ngx-charts-angular",
+      "demo_source": "https://gustavz7.github.io/ngx-charts-angular/",
+      "img_url": "assets/3.png",
+      "teconologies": [
+        {
+          "front": "Angular + NgxCharts",
+          "back": "Laravel"
+        }
+      ]
+    }
+  ],
+  "job_experience": [
+    {
+      "job_name": "Centers Junior 2",
+      "job_description": "",
+      "job_location": "Temuco, Araucania",
+      "start_date": "2022-03-07T23:00:00.000+00:00",
+      "end_date": "",
+      "company_title": "NTTDATA CHILE CENTERS",
+      "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
+      "company_url": "es.nttdata.com"
+    },
+    {
+      "job_name": "Practica Profesional",
+      "job_description": "",
+      "job_location": "Temuco, Araucania",
+      "start_date": "2021-12-07T23:00:00.000+00:00",
+      "end_date": "2022-03-07T23:00:00.000+00:00",
+      "company_title": "NTTDATA CHILE CENTERS",
+      "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
+      "company_url": "es.nttdata.com"
+    }
+  ]
+}

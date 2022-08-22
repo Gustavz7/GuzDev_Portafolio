@@ -1,7 +1,7 @@
 export var skills_data = [
   {
     name: 'Java',
-    value: 80,
+    value: 65,
   },
   {
     name: 'Javascript',
@@ -9,7 +9,7 @@ export var skills_data = [
   },
   {
     name: 'Typescript',
-    value: 72,
+    value: 60,
   },
   {
     name: 'SQL',
@@ -17,10 +17,10 @@ export var skills_data = [
   },
   {
     name: 'Angular',
-    value: 50,
+    value: 65,
   },
   {
     name: 'SpringBoot',
-    value: 35,
+    value: 40,
   },
 ];
