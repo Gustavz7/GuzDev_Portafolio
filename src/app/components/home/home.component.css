@@ -1,24 +1,25 @@
-.home-component {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.content-section {
-  height: auto;
-}
-
 .page-welcome {
-  height: auto;
   width: 100%;
-  margin: 0;
+}
+
+.home-component {
+  width: 80%;
+  margin: 5% auto;
 }
 .homePage-body {
   height: auto;
-  margin: 5rem 8rem;
+  width: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-self: center;
   gap: 20px;
-  max-width: 65;
 }
+.content-section {
+  height: auto;
+  width: 100%;
+  align-self: center;
+}
+
+
+

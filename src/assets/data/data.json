@@ -15,9 +15,9 @@
       "id": 1,
       "name": "Crud-Img",
       "date": "27-01-2022",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
-      "link_code": "https://www.github.com",
-      "link_visit": "https://www.google.com",
+      "description": "Local repository of images, cumplies with the basics uses of the information CRUD (Create, Read, Update, Delete)",
+      "code_source": "https://github.com/Gustavz7/crud-img",
+      "demo_source": "",
       "img_url": "assets/crud-img.png",
       "teconologies": [
         {
@@ -30,10 +30,10 @@
       "id": 2,
       "name": "Gestor de fondos",
       "date": "20-07-2021",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
-      "link_code": "https://www.github.com",
-      "link_visit": "https://www.google.com",
-      "img_url": "assets/crud-img-4.png",
+      "description": "A simple app of spent registration with description and title, created with Laravel 8 & Vue 2",
+      "code_source": "https://github.com/Gustavz7/Proyecto_web_gestor_fondos",
+      "demo_source": "",
+      "img_url": "assets/2.png",
       "teconologies": [
         {
           "front": "Vue.js",
@@ -45,29 +45,14 @@
       "id": 3,
       "name": "Money prices Graphic",
       "date": "20-02-2022",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
-      "link_code": "https://www.github.com",
-      "link_visit": "https://www.google.com",
-      "img_url": "assets/crud-img-2.png",
+      "description": "This app showS the price of differents Currencies like Dolar, Clp, Euro in an beautiful chart of the Angular Charts Library NGX",
+      "code_source": "https://github.com/Gustavz7/ngx-charts-angular",
+      "demo_source": "https://gustavz7.github.io/ngx-charts-angular/",
+      "img_url": "assets/3.png",
       "teconologies": [
         {
           "front": "Angular + NgxCharts",
           "back": "Laravel"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Js Game",
-      "date": "11-04-2022",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit earum at cupiditate fugit laboriosam placeat",
-      "link_code": "https://www.github.com",
-      "link_visit": "https://www.google.com",
-      "img_url": "assets/crud-img-3.png",
-      "teconologies": [
-        {
-          "front": "Angular",
-          "back": "Firebase"
         }
       ]
     }

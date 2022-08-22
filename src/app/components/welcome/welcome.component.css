@@ -1,42 +1,20 @@
 .welcome-section {
-  width: auto;
-  height: 760px;
-  margin: 0;
+  height: 100vh;
   background: linear-gradient(to left, rgba(255, 0, 0, 0), black);
-  /*  ! pendiente combinar degradado + imagen*/
   display: flex;
   flex-direction: row;
+  align-self: center;
+}
+@media (max-width: 720px) {
 }
 
 .content {
-  width: auto;
+  max-width: 50%;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-.home-title {
-  font-size: 50px;
-  margin-bottom: 15px;
-}
-.home-subtitle {
-  font-size: 20px;
-  color: rgb(96, 80, 230);
-  letter-spacing: 6px;
-  margin-left: 8px;
-}
-.seeMore {
-  display: flex;
-  margin-left: 10px;
-  flex-direction: column;
-  text-align: center;
-  color: #31b5aa;
-}
-.seeMore p {
-  display: inline;
-  margin: auto 1px;
-  text-align: center;
-}
 .avatar-container{
   display: flex;
   align-self: center;
@@ -53,7 +31,40 @@
 
 }
 .text-container{
-  text-align: left;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.home-title {
+  display: inline;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 3.4rem;
+}
+.home-subtitle {
+  display: inline;
+  font-size: 1.5rem;
+  color: rgb(96, 80, 230);
+  letter-spacing: 6px;
+  margin: 8px 0;
+  text-align: center;
+}
+.seeMore {
+  display: flex;
+  margin-left: 10px;
+  flex-direction: column;
+  text-align: center;
+  color: #31b5aa;
+}
+.seeMore p {
+  display: inline;
+  margin: auto 1px;
+  text-align: center;
 }

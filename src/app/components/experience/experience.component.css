@@ -14,6 +14,14 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  gap: 10px;
+}
+@media (max-width: 720px) {
+  .cards-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .card {
   color: white;
@@ -22,10 +30,8 @@
   background-color: rgba(255, 255, 255, 0.1);
   height: 250px;
   width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 .card-body {
   width: 100%;
   font-size: 13px;

@@ -15,7 +15,7 @@ export class SkillsComponent implements OnInit {
    * Ngx Chart Configuracion
    */
   skills_data: any[] | undefined;
-  view: [number, number] = [1000, 400];
+  //view: [number, number] = [0, 0]; //si esta presente el grafico no es responsivo
 
   // options
   showXAxis: boolean = true;
@@ -51,5 +51,7 @@ export class SkillsComponent implements OnInit {
     });
   }
   */
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+  }
 }

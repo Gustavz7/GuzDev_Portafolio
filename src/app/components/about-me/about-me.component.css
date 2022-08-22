@@ -1,27 +1,29 @@
 .aboutMe-container {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   align-self: center;
-  max-width: 1200px;
 }
 
-.content-section{
+.content-section {
   max-height: 80%;
   display: flex;
   flex-direction: wrap;
+  justify-content: center;
 }
+
 .img-section {
-  width: 100%;
-  max-width: 400px;
+  max-width: 225px;
   height: auto;
   margin: 2%;
   display: flex;
   align-self: center;
 }
 .img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -33,20 +35,33 @@
   flex-direction: column;
   text-align: left;
 }
-.btn-section{
+.btn-section {
+}
+.title-1 {
+  color: rgb(96, 80, 230);
+  letter-spacing: 6px;
+}
+.title-2 {
+  font-size: 25px;
+}
+.description {
+  font-size: 15px;
+  letter-spacing: 0.1rem;
+}
 
+.contact-btn {
+  border: 2px solid white;
 }
-.title-1{
-    color: rgb(96, 80, 230);
-    letter-spacing: 6px;
-}
-.title-2{
-    font-size: 25px;
-}
-.description{
-    font-size: 15px;
-}
-
-.contact-btn{
-    border: 2px solid white;
+@media (max-width: 720px) {
+  .content-section {
+    flex-direction: column;
+  }
+  .text-section {
+    width: 80%;
+    margin: 2% 2% 5% 2%;
+    align-self: center;
+  }
+  .img-section {
+    margin: 4% auto;
+  }
 }

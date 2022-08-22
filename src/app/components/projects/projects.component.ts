@@ -18,6 +18,13 @@ export class ProjectsComponent implements OnInit {
   projects_data: Project[] = []; //los proyectos de la persona
   isReady: boolean = false;
 
+  enableDemo(item:any){
+    let disable = true;
+    if (item.demo_source !== ""){
+      disable = false;
+    }
+    return disable;
+  }
   ngOnInit(): void {
     this.apiRequest.getUserData().subscribe((data: UserData) => {
       this.person_data = data.person;

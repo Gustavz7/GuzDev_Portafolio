@@ -22,8 +22,13 @@
         <p class="card-text">{{item.description}}</p>
       </div>
       <div class="card-body">
-        <button class="card-btn btn btn-outline btn-sm code-btn">Code Source</button>
-        <button class="card-btn btn btn-outline btn-sm demo-btn">Demo</button>
+        <button class="card-btn btn btn-outline btn-sm code-btn">
+          <a href="{{item.code_source}}" target="_blank">Source</a>
+          </button>
+
+        <button class="card-btn btn btn-outline btn-sm demo-btn" [disabled]="enableDemo(item)">
+          <a href="{{item.demo_source}}" target="_blank">Demo</a>
+        </button>
       </div>
     </div>
 
