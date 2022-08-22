@@ -45,7 +45,7 @@
       "id": 3,
       "name": "Money prices Graphic",
       "date": "20-02-2022",
-      "description": "This app showS the price of differents Currencies like Dolar, Clp, Euro in an beautiful chart of the Angular Charts Library NGX",
+      "description": "This app shows the prices of differents Currencies like Dolar, Clp and Euro in an beautiful chart of the Angular Charts Library NGX",
       "code_source": "https://github.com/Gustavz7/ngx-charts-angular",
       "demo_source": "https://gustavz7.github.io/ngx-charts-angular/",
       "img_url": "assets/3.png",
