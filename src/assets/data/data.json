@@ -17,7 +17,7 @@
       "date": "27-01-2022",
       "description": "Local repository of images, cumplies with the basics uses of the information CRUD (Create, Read, Update, Delete)",
       "code_source": "https://github.com/Gustavz7/crud-img",
-      "demo_source": "",
+      "demo_source": "https://gustavz7.github.io/crud-img/",
       "img_url": "assets/crud-img.png",
       "teconologies": [
         {
@@ -58,12 +58,22 @@
     }
   ],
   "job_experience": [
-        {
-      "job_name": "Centers Junior 2",
+    {
+      "job_name": "Centers Developer",
+      "job_description": "",
+      "job_location": "Temuco, Araucania",
+      "start_date": "2023-03-07T23:00:00.000+00:00",
+      "end_date": "",
+      "company_title": "NTTDATA CHILE CENTERS",
+      "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
+      "company_url": "es.nttdata.com"
+    },
+    {
+      "job_name": "Centers Junior 4",
       "job_description": "",
       "job_location": "Temuco, Araucania",
       "start_date": "2022-09-07T23:00:00.000+00:00",
-      "end_date": "",
+      "end_date": "2023-03-07T23:00:00.000+00:00",
       "company_title": "NTTDATA CHILE CENTERS",
       "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
       "company_url": "es.nttdata.com"
