@@ -98,5 +98,25 @@
       "company_img": "https://www.logo.wine/a/logo/NTT_Data/NTT_Data-Logo.wine.svg",
       "company_url": "es.nttdata.com"
     }
+  ],
+  "badges": [
+    {
+      "name": "AWS Certified Developer - Associate",
+      "description": "",
+      "start_date": "2024-06-24T00:00:00.000+00:00",
+      "end_date": "",
+      "title": "AWS Certified Developer - Associate",
+      "img_url": "https://images.credly.com/size/220x220/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png",
+      "validation_url": "https://www.credly.com/badges/6eaf5715-6919-4f6e-ad7f-bc5f068e3b09/public_url"
+    },
+    {
+      "name": "Scrum Foundation Professional Certification - SFPC™",
+      "description": "",
+      "start_date": "2023-06-29T00:00:00.000+00:00",
+      "end_date": "",
+      "title": "Scrum Foundation Professional Certification - SFPC™",
+      "img_url": "https://images.credly.com/size/220x220/images/4e3d6f9f-55d7-4ea7-b0e6-f4d4ff543e22/image.png",
+      "validation_url": "https://www.credly.com/badges/604dc89a-eb72-4bd8-bae9-12d4686473be/public_url"
+    }
   ]
 }
