@@ -18,8 +18,7 @@ export class ExperienceComponent implements OnInit {
   current_date: Date = new Date();
   start_date: Date = new Date();
   end_date: Date = new Date();
-  amount_of_time: number = 0;
-
+  exp_total: string = '';
 
   isActualJob(item: any) {
     if (item.end_date == '') {
@@ -31,42 +30,54 @@ export class ExperienceComponent implements OnInit {
 
   //Calcula la cantidad de dias desde que se empezo el trabajo hasta su fin o fecha actual, devuelve los dias
   calcDays(item: any) {
-    let days;
     this.start_date = new Date(item.start_date);
     this.end_date = new Date();
     if (item.end_date !== '') {
       this.end_date = new Date(item.end_date); //Traspaso fecha desde string a Date
     }
-    this.amount_of_time = this.end_date.getTime() - this.start_date.getTime();
-    days = (this.amount_of_time / (1000 * 3600 * 24)).toFixed(0);
-    return this.calculateTimimg(days);
+    let amount_of_time = this.end_date.getTime() - this.start_date.getTime();
+    return (amount_of_time / (1000 * 3600 * 24)).toFixed(0);
   }
-  calculateTimimg(d:any) {
-    let months = 0, years = 0;
-    let response = "";
-    while(d){
-       if(d >= 365){
-          years++;
-          d -= 365;
-       }else if(d >= 30){
-          months++;
-          d -= 30;
-       }else{
-        d-=1
-       }
+
+  generateTotalTime(item: any) {
+    return this.calculateTimimg(this.calcDays(item));
+  }
+
+  calculateTimimg(d: any) {
+    let months = 0,
+      years = 0;
+    let response = '';
+    while (d) {
+      if (d >= 365) {
+        years++;
+        d -= 365;
+      } else if (d >= 30) {
+        months++;
+        d -= 30;
+      } else {
+        d -= 1;
+      }
     }
-    if (years != 0){
-      response = years+" Years ";
+    if (years != 0) {
+      response = years + ' Years ';
     }
-    if(months !=0){
-      response = response + months + " Months "
+    if (months != 0) {
+      response = response + months + ' Months';
     }
-    return response
+    return response;
+  }
+  calculateTotalTimming() {
+    let total_days = 0;
+    this.exp_data.forEach((e) => {
+      total_days = total_days + Number.parseInt(this.calcDays(e));
+    });
+    this.exp_total = this.calculateTimimg(total_days);
   }
 
   ngOnInit(): void {
     this.apiRequest.getUserData().subscribe((data: UserData) => {
       this.exp_data = data.job_experience;
+      this.calculateTotalTimming();
     });
   }
 }

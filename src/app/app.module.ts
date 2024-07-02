@@ -21,6 +21,7 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { badgesComponent } from './components/badges/badges.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     ExperienceComponent,
     WelcomeComponent,
     SkillsComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    badgesComponent
   ],
   imports: [
     BrowserModule,

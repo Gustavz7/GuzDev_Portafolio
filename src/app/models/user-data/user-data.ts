@@ -2,6 +2,7 @@ export class UserData {
   person: Person = new Person();
   projects: Project[] = [];
   job_experience: Experience[] = [];
+  badges: badge[] = [];
 }
 
 export class Person {
@@ -69,5 +70,24 @@ export class Experience {
     this.company_title = '';
     this.company_img = '';
     this.company_url = '';
+  }
+}
+export class badge {
+  name: string;
+  description: string;
+  start_date: string;
+  end_date: string;
+  title: string;
+  img_url: string;
+  validation_url: string;
+
+  constructor() {
+    this.name = '';
+    this.description = '';
+    this.start_date = '';
+    this.end_date = '';
+    this.title = '';
+    this.img_url = '';
+    this.validation_url = '';
   }
 }

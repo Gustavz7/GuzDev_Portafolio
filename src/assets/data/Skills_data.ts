@@ -23,4 +23,8 @@ export var skills_data = [
     name: 'SpringBoot',
     value: 40,
   },
+  {
+    name: 'AWS Cloud',
+    value: 70,
+  }
 ];

@@ -1,0 +1,24 @@
+<div class="badge-container">
+    <div class="text-section">
+        <div class="text-header">
+            <p class="title-2">Badges</p>
+            <p class="title-1">
+                See my badges about different areas
+            </p>
+        </div>
+    </div>
+
+    <div class="badge-section">
+        <div class="badge" *ngFor="let item of badge_list">
+            <a class="badge-link-a" [href]="item.validation_url" target="_blank" rel="noopener noreferrer">
+                <div class="badge-body">
+                    <img class="badge-img" src="{{item.img_url}}" alt="{{item.title}}" />
+                    <div class="badge-text-div">
+                        <P class="title"> {{item.name}}</P>
+                        <p class="date">Granted at <b class="date">{{item.start_date | date:'mediumDate'}}</b> </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

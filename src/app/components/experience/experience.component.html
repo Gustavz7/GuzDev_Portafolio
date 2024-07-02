@@ -1,7 +1,7 @@
 <div class="experience-container">
   <div class="text-section">
     <div class="text-header">
-      <p class="title-2">Experience history</p>
+      <p class="title-2">Experience history <b class="total-years">({{exp_total}})</b></p>
       <p class="title-1">
         My Personal experience between differents enterprices
       </p>
@@ -17,7 +17,7 @@
         <span class="date-title"> - </span>
         <span class="date-title" *ngIf="isActualJob(item);else endDate"> Today </span>
         <ng-template #endDate> <span class="date-title">{{item.end_date | date:'mediumDate'}}</span></ng-template>
-        <p class="total-time-title"> {{calcDays(item)}} </p>
+        <p class="total-time-title"> {{generateTotalTime(item)}} </p>
         <p class="company-title"> {{item.company_title}}</p>
         <img class="card-img" src="{{item.company_img}}" />
       </div>

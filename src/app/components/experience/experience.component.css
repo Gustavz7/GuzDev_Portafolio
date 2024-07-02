@@ -67,6 +67,11 @@ p{
     letter-spacing: 3px;
     margin: 3px 0;
 }
+
+.total-years{
+  font-size: 20px;
+}
+
 .title-1 {
   color: rgb(96, 80, 230);
   letter-spacing: 6px;

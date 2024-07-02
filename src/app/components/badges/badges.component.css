@@ -1,0 +1,102 @@
+/* estilos titulos de la seccion badges*/
+.badge-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.text-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.title-1 {
+  color: rgb(96, 80, 230);
+  letter-spacing: 6px;
+}
+.title-2 {
+  font-size: 25px;
+}
+
+/* estilos tarjetas budgets*/
+.badge-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 10px;
+}
+@media (max-width: 720px) {
+  .badge-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .badge-body {
+    padding: 0 100px;
+  }
+
+  .badge-text-div{
+    display: none;
+  }
+  .badge-text-div p, b{
+    display: none;
+  }
+
+}
+.badge {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40%;
+  
+}
+.badge-link-a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.badge-body:hover {
+  background-color: #f0f0f08a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.badge-body {
+  width: 100%;
+  height: 40%;
+  font-size: 13px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px;
+  justify-content: center;
+}
+.badge-img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  padding: 2%;
+}
+
+.badge-text-div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-wrap: wrap;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+
+}
+.date {
+  letter-spacing: 2px;
+  display: contents;
+}
