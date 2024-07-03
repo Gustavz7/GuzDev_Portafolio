@@ -3,6 +3,16 @@ export class UserData {
   projects: Project[] = [];
   job_experience: Experience[] = [];
   badges: badge[] = [];
+  userSkillsData: UserSkills[] = [];
+}
+
+export class UserSkills {
+  name: string;
+  value: number;
+  constructor() {
+    (this.name = ''),
+      (this.value = 0)
+  }
 }
 
 export class Person {

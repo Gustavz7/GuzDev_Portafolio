@@ -1,20 +1,20 @@
-import { skills_data } from '../../../assets/data/Skills_data';
 import { ApiRequestsService } from 'src/app/services/api-requests.service';
 import { Component, OnInit } from '@angular/core';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
+import { UserSkills } from 'src/app/models/user-data/user-data';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
+  skills_data: UserSkills[] = [];
+
   constructor(private apiRequest: ApiRequestsService) {
-    Object.assign(this, { skills_data });
   }
   /**
    * Ngx Chart Configuracion
    */
-  skills_data: any[] | undefined;
   //view: [number, number] = [0, 0]; //si esta presente el grafico no es responsivo
 
   // options
@@ -37,21 +37,10 @@ export class SkillsComponent implements OnInit {
     name: 'Customer Usage',
   };
 
-  //* Llamada api de los datos (desuso)
-  /*
-
-  api_response = [];
-  skills_data: any = [];
-
+  // Llamada api de los datos
   ngOnInit(): void {
-    this.apiRequest.getSkillsData().subscribe((data) => {
-      this.api_response = Object.values(data);
-      this.skills_data = this.api_response[1]
-      console.log(this.skills_data);
+    this.apiRequest.getUserData().subscribe((data) => {
+      this.skills_data = data.userSkillsData;
     });
-  }
-  */
-
-  ngOnInit(): void {
   }
 }

@@ -8,12 +8,16 @@ import { Observable } from 'rxjs';
 })
 export class ApiRequestsService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
+  baseUrl: string = "https://gustavo-personal-projects-bucket.s3.amazonaws.com/general-assets";
 
-  //prod -> assets/data
-  baseUrl:string = "assets/data"; 
-
-  getUserData():Observable<UserData>{
-    return this.http.get<UserData>(`${this.baseUrl}/data.json`)
+  //prod
+  getUserData(): Observable<UserData> {
+    return this.http.get<UserData>(`${this.baseUrl}/data-source/person_summary.json`)
   }
+
+  //dev
+  // getUserData(): Observable<UserData> {
+  //   return this.http.get<UserData>("../assets/data/person_summary.json")
+  // }
 }

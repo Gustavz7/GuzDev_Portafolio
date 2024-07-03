@@ -12,15 +12,15 @@ import { ApiRequestsService } from 'src/app/services/api-requests.service';
 export class ProjectsComponent implements OnInit {
   faGithub = faGithub;
   faArrowRight = faArrowRight;
-  constructor(private apiRequest: ApiRequestsService) {}
+  constructor(private apiRequest: ApiRequestsService) { }
 
   person_data: Person = new Person(); // los datos personales de la persona
   projects_data: Project[] = []; //los proyectos de la persona
   isReady: boolean = false;
 
-  enableDemo(item:any){
+  enableDemo(item: any) {
     let disable = true;
-    if (item.demo_source !== ""){
+    if (item.demo_source !== "") {
       disable = false;
     }
     return disable;
@@ -35,10 +35,3 @@ export class ProjectsComponent implements OnInit {
     });
   }
 }
-/*
- this.apiRequest.getUserData().subscribe((data) => {
-      (this.api_response = Object.values(data)),
-        (this.projects_data = this.api_response[0]);
-      console.log(this.projects_data);
-    });
-*/
